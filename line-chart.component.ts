@@ -68,11 +68,9 @@ this.getBackendData();
       }
     };
 
-    // this.getBackendData();
-    // this.data=[{key: "100", values: [{x: 1557814274503, y: 17.8086, key: 100}]}];
-    // this.data = this.formatData(LineChartComponent.sensor);
+    
 
-    // console.log("this.data", this.data);
+  
      console.log('LineChartComponent.sensor',LineChartComponent.sensor);
     this.data=this.formatData(LineChartComponent.sensor);
    //  this.socketData();
@@ -101,10 +99,6 @@ this.getBackendData();
 
 
 
-    // this.buffer = this.data;
-    // //  this.data.push({key:101,values:[{x:2,y:2},{x:4,y:5}]}) ;
-    // //  this.data.push({key:102,values:[{x:4,y:5},{x:2,y:2}]}) ;
-    // // dataById={key:101,values:[{x:2,y:2}]}
     return dataById;
   }
   getBackendData() {
@@ -119,8 +113,7 @@ this.getBackendData();
           LineChartComponent.sensor.push(data[i]);
         }
         console.log(' LineChartComponent.sensor data', LineChartComponent.sensor);
-        // this.arr = LineChartComponent.sensor;
-        //console.log("data inside getbackend" + this.arr);
+     
 
             let dummy=this.formatData(LineChartComponent.sensor);
             for(let i=0;i<dummy.length;i++)
@@ -130,7 +123,7 @@ this.getBackendData();
             
          this.nvd3 && this.nvd3.chart && this.nvd3.chart.update();
 
-        // this.data=[{key:101,values:[{x:1,y:1}]}];
+       
 
         console.log(' this.data', this.data);
 
