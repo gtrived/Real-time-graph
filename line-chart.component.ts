@@ -35,9 +35,6 @@ this.getBackendData();
   }
 
   graphPlot() {
-
-
-
     this.options = {
       chart: {
         type: 'lineChart',
@@ -139,7 +136,7 @@ this.getBackendData();
 
   socketData() {
     //real time data
-    let socket = socketio.connect('http://13.90.155.148:8030');//'http://13.76.162.62:3000'
+    let socket = socketio.connect('http://13.90.155.148:8030');//'http://13.76.162.62:3000' ///gets realtime values from backend
     let sensorSub = new Subject<SensorData>();
 
     socket.on('data', (sensorStatus: string) => {
@@ -159,8 +156,7 @@ this.getBackendData();
             }
 
           }
-        }
-       
+        }       
         console.log(' this.graphdata', this.data);
       }
     });
