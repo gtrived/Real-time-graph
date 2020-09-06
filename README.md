@@ -4,3 +4,5 @@ While working with NVD3.js for data visualization , I was not able to find sampl
 
 ### line-chart.component.ts :
 Contains a sample use-case of using NVD3.js for real-time graph plots with Angular 5.
+
+Given sensor data of humidity , grain and temperature from backend services.Plotted real-time graphs .
